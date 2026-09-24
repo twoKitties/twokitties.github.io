@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Александр Мартынюк — Unity Developer</title>
+<meta name="description" content="Unity/C# разработчик, 7+ лет в геймдеве: мобильные F2P и ПК (Steam).">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐈</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F6F7F9;
+    --ink: #1B2330;
+    --muted: #5A6475;
+    --rule: #D8DDE5;
+    --accent: #0F6B6B;
+    --chip: #E6ECEF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #151A22;
+      --ink: #E4E8EE;
+      --muted: #97A1B1;
+      --rule: #2B3340;
+      --accent: #5CC2BD;
+      --chip: #212936;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 16px/1.55 Manrope, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 860px; margin: 0 auto; padding: 56px 24px 72px; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  header { margin-bottom: 48px; }
+  h1 {
+    font: 700 clamp(2.2rem, 6vw, 3.6rem)/1.02 Unbounded, "Arial Black", sans-serif;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px;
+  }
+  .role { font-size: 1.2rem; font-weight: 500; margin: 0 0 20px; color: var(--muted); }
+  .contacts { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0; padding: 0; list-style: none; }
+  .contacts a { font-weight: 500; }
+  .pdf {
+    display: inline-block; margin-top: 20px; padding: 8px 14px;
+    border: 1.5px solid var(--accent); border-radius: 6px;
+    text-decoration: none; font-weight: 700;
+  }
+  .pdf:hover { background: var(--accent); color: var(--paper); }
+
+  h2 {
+    font: 500 1.05rem/1.3 Unbounded, sans-serif;
+    margin: 48px 0 20px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { max-width: 68ch; }
+
+  .job { display: grid; grid-template-columns: 150px 1fr; gap: 4px 24px; padding: 0 0 28px; }
+  .when { color: var(--muted); font-size: 0.9rem; padding-top: 3px; }
+  .job h3 { margin: 0; font-size: 1.08rem; font-weight: 700; }
+  .job h3 span { font-weight: 400; color: var(--muted); }
+  .meta { margin: 2px 0 8px; color: var(--muted); font-size: 0.92rem; }
+  .job ul { margin: 0; padding-left: 18px; max-width: 68ch; }
+  .job li { margin: 4px 0; }
+  .job li::marker { color: var(--accent); }
+
+  .skills { display: grid; grid-template-columns: 150px 1fr; gap: 10px 24px; margin: 0; }
+  .skills dt { color: var(--muted); font-size: 0.92rem; padding-top: 4px; }
+  .skills dd { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .skills dd span { background: var(--chip); padding: 2px 10px; border-radius: 4px; font-size: 0.92rem; }
+
+  @media (max-width: 600px) {
+    main { padding-top: 36px; }
+    .job, .skills { grid-template-columns: 1fr; }
+    .skills dt { padding-top: 8px; }
+  }
+  @media print {
+    :root { --paper: #fff; --ink: #000; --muted: #444; --rule: #bbb; --accent: #0F6B6B; --chip: #eee; }
+    main { padding: 0; }
+    .pdf { display: none; }
+    .job { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Александр Мартынюк</h1>
+    <p class="role">Unity Developer · C# · мобильные F2P и ПК (Steam)</p>
+    <ul class="contacts">
+      <li><a href="mailto:nemyrexe@gmail.com">nemyrexe@gmail.com</a></li>
+      <li><a href="https://t.me/lilKitties">Telegram @lilKitties</a></li>
+      <li><a href="https://github.com/twoKitties">GitHub twoKitties</a></li>
+      <li>Новосибирск, удалённо или переезд</li>
+    </ul>
+    <a class="pdf" href="CV_Martyniuk_Unity_Developer.pdf" download>Скачать PDF</a>
+  </header>
+
+  <section>
+    <h2>О себе</h2>
+    <p>Около 7 лет в геймдеве: мобильные F2P-проекты и ПК-релиз в Steam. Разрабатываю игровые и мета-системы, сложный UI, клиент-серверную интеграцию; регулярно рефакторю и расширяю легаси-код. Был лидом команды на релизе в Steam. Профессиональный интерес — архитектура приложений и производительный код.</p>
+  </section>
+
+  <section>
+    <h2>Опыт</h2>
+
+    <article class="job">
+      <div class="when">янв 2025 — сейчас</div>
+      <div>
+        <h3>Unity Developer <span>— Многомногоигр</span></h3>
+        <p class="meta">Lagerta, iOS / Android · <a href="https://lagerta.games/">lagerta.games</a></p>
+        <ul>
+          <li>Retention-механики от архитектуры до релиза: ежедневная награда, колесо фортуны, слоты сохранений, система офферов</li>
+          <li>UI: сложные окна, скроллеры, кастомные компоненты, унификация попапов; адаптация под планшеты, iPad и нестандартные разрешения</li>
+          <li>Шейдеры фонов и персонажей, жесты и слайд-навигация, интеграция Spine-анимаций и частиц</li>
+          <li>Оптимизация загрузки и кэширования серверных запросов; профилирование в Unity Profiler и Frame Debugger</li>
+          <li>REST API, сетевые события, синхронизация состояния; Addressables; Unity Localization</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">янв 2024 — авг 2024</div>
+      <div>
+        <h3>Lead Unity Developer <span>— Undead Fox</span></h3>
+        <p class="meta">Dark Lord, ПК · <a href="https://store.steampowered.com/app/2515030/Dark_Lord/">Steam</a></p>
+        <ul>
+          <li>Принял техническое руководство после ухода лида и довёл проект до релиза в Steam</li>
+          <li>Декомпозиция ГД-требований, выбор технологий, код-ревью, стандарты команды</li>
+          <li>Приоритизация под релиз, координация с ГД и QA; интеграция Unity UGC</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">окт 2022 — дек 2023</div>
+      <div>
+        <h3>Unity Developer <span>— Undead Fox</span></h3>
+        <p class="meta">Dark Lord, Android → ПК</p>
+        <ul>
+          <li>Оптимизация для Google Play: Addressables, снижение размера билда, вынос ассетов на CDN</li>
+          <li>Портирование на ПК: Steamworks, загрузка контента в реальном времени, UX под клавиатуру и мышь</li>
+          <li>Геймплейные фичи в связке с ГД: прототип → прод</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">фев 2021 — сен 2022</div>
+      <div>
+        <h3>Unity Developer <span>— Dankolab</span></h3>
+        <p class="meta">Match-3, Merge-2, мобильные</p>
+        <ul>
+          <li>Tropical Island: A*-навигация персонажей, механика строительства, 2D Sprite Shape, интеграция с легаси-квестовой системой</li>
+          <li>Dragon Magic: рефакторинг и поддержка, нативные GDPR / IDFA для iOS и Android</li>
+          <li>uGUI + TextMeshPro, DOTween; Unity IAP, Firebase, GameAnalytics, Amplitude, AppsFlyer, Adjust</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">фев 2019 — дек 2020</div>
+      <div>
+        <h3>Unity Developer <span>— Цифровые экосистемы</span></h3>
+        <p class="meta">iOS, Android, macOS, Windows</p>
+        <ul>
+          <li>Subway Simulator: праздничный контент и поддержка; Stair Falling: релиз в трёх сторах</li>
+          <li>Unity IAP с подписками и стартовыми офферами, сборка под 4 платформы</li>
+          <li>Код-ревью, онбординг джунов</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="when">май 2018 — янв 2019</div>
+      <div>
+        <h3>Unity Developer <span>— Arise LLC</span></h3>
+        <ul>
+          <li>Match-3 с нуля: игровое ядро, UI, эффекты, публикация в Google Play и App Store</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <h2>Навыки</h2>
+    <dl class="skills">
+      <dt>Языки</dt>
+      <dd><span>C#</span><span>C++ (хобби)</span><span>Lua</span></dd>
+      <dt>Unity</dt>
+      <dd><span>uGUI</span><span>TextMeshPro</span><span>DOTween</span><span>Spine</span><span>Addressables</span><span>Localization</span><span>Unity IAP</span><span>Profiler</span><span>Shaders</span></dd>
+      <dt>Общее</dt>
+      <dd><span>REST API</span><span>Git</span><span>SOLID</span><span>ООП</span><span>async/await</span><span>iOS / Android / PC / macOS</span></dd>
+      <dt>Аналитика</dt>
+      <dd><span>Firebase</span><span>GameAnalytics</span><span>Amplitude</span><span>AppsFlyer</span><span>Adjust</span></dd>
+      <dt>Английский</dt>
+      <dd><span>C1</span></dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Образование</h2>
+    <p>Кемеровский государственный университет, биологический факультет, «Генетика», 2011</p>
+  </section>
+</main>
+</body>
+</html>
